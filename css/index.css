@@ -1,0 +1,102 @@
+body {
+	margin: 0;
+	font-family: Helvetica, sans-serif;
+	overflow-x: hidden;
+}
+
+* {
+	box-sizing: border-box;
+	user-select: none;
+}
+
+.page {
+	position: relative;
+	height: 100vh;
+}
+
+.arrow {
+	position: absolute;
+	color: white;
+	font-size: 36px;
+	font-weight: bold;
+	z-index: 1;
+	cursor: pointer;
+}
+
+/** PAGE 1 **/
+.un {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: mediumaquamarine;
+	color: white;
+}
+
+.un .btn {
+	width: 100%;
+	bottom: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+/** PAGE 2 **/
+.deux .slider {
+	display: flex;
+	width: 100vw;
+	transition: transform 0.7s;
+}
+
+.deux .slide {
+	width: 100vw;
+	height: 100vh;
+	flex-shrink: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	flex-direction: column;
+}
+
+.deux .slide div {
+	text-align: right;
+	padding: 0 50px;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.deux .right,
+.deux .left {
+	top: calc(50vh - 18px);
+	padding: 0 10px;
+	transition: transform 0.2s;
+}
+.deux .right:hover,
+.deux .left:hover {
+	transform: scale(1.1);
+}
+
+.deux .right {
+	right: 0;
+}
+
+/** PAGE 3 **/
+.trois {
+	background-color: lightblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.trois .contacts {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+}
+
+.trois .contactsList {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
