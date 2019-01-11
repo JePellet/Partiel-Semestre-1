@@ -165,7 +165,7 @@ fetch('https://dev.drangies.fr/exam').then(function(res) {
     var slide = document.querySelectorAll('.slide');
 
     right.addEventListener('click', function(event) {
-      if (i===-200) {
+      if (i === -200) {
       } else {
         i = i-100;
         slide.forEach(function(s) {
@@ -176,7 +176,7 @@ fetch('https://dev.drangies.fr/exam').then(function(res) {
     });
 
     left.addEventListener('click', function(event) {
-      if (i===0) {
+      if (i === 0) {
       } else {
         i = i+100;
         slide.forEach(function(s) {
